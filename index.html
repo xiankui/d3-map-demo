@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>d3.js</title>
+	<style type="text/css">
+		html {
+			height: 100%;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #efefef;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+		}
+		#map {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+		#tooltip {
+			position: absolute;
+			left: 480px;
+			top:  300px;
+			padding: 10px;
+			border-radius: 5px;
+			background-color: rgba(0,0,0,.5);
+			pointer-events: none;
+		}
+		#tooltip p {
+			font-size: 16px;
+			color: #fff;
+			line-height: 20px;
+		}
+		#tooltip #value {
+			margin-top: 10px;
+		}
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="map">
+		<div id="tooltip" class="hidden">
+			<p><strong id="prov-label"></strong></p>
+			<p>pm2.5：<span id="prov-value"></span></p>
+		</div>
+	</div>
+	<!-- draw map in index.js -->
+	<script src="./d3.v3.js"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
