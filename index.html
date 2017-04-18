@@ -43,6 +43,15 @@
 		.hidden {
 			display: none;
 		}
+
+		.fork {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			right: 0;
+			bottom: 10px;
+			text-align: center;
+		}
 	</style>
 </head>
 <body>
@@ -52,6 +61,7 @@
 			<p>pm2.5：<span id="prov-value"></span></p>
 		</div>
 	</div>
+	<p class="fork"><a style="color: blue;" href="https://github.com/xiankui/d3-map-demo">fork on github</a></p>
 	<!-- draw map in index.js -->
 	<script src="./d3.v3.js"></script>
 	<script src="./index.js"></script>
